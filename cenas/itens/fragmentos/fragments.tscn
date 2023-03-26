@@ -1,0 +1,439 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/fragments.gd" type="Script" id=1]
+[ext_resource path="res://sprites/New Piskel(17).png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("rigids/RigidBody2D:mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("rigids/RigidBody2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("rigids/RigidBody2D:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("rigids/RigidBody2D2:mode")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("rigids/RigidBody2D2:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("rigids/RigidBody2D:collision_mask")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 7 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("rigids/RigidBody2D2:collision_mask")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("rigids/RigidBody2D4:mode")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("rigids/RigidBody2D4:modulate")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("rigids/RigidBody2D4:collision_mask")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 7 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("rigids/RigidBody2D5:mode")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("rigids/RigidBody2D5:collision_mask")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 7 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("rigids/RigidBody2D5:modulate")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("rigids/RigidBody2D6:mode")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("rigids/RigidBody2D6:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("rigids/RigidBody2D3:mode")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("rigids/RigidBody2D3:modulate")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "destroy"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("rigids/RigidBody2D:mode")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("rigids/RigidBody2D:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("rigids/RigidBody2D2:mode")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("rigids/RigidBody2D2:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("rigids/RigidBody2D4:mode")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("rigids/RigidBody2D4:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("rigids/RigidBody2D5:mode")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("rigids/RigidBody2D5:modulate")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("rigids/RigidBody2D6:mode")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("rigids/RigidBody2D6:modulate")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("rigids/RigidBody2D3:mode")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ 0, 0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("rigids/RigidBody2D3:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[node name="fragments" type="Node2D"]
+position = Vector2( 196, 110 )
+script = ExtResource( 1 )
+
+[node name="rigids" type="Node2D" parent="."]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="rigids"]
+collision_layer = 16
+collision_mask = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -27, -22, 27, -22, 27, 0, 26, 1, 26, 0, 24, 6, 24, 0, 23, 7, 10, 7, 12, -2, 12, -3, 11, -2, -13, -2, -13, -3, -23, -3, -23, -18 )
+uv = PoolVector2Array( 5.125, 9.875, 59.125, 9.875, 59.125, 31.875, 58.125, 32.875, 58.125, 31.875, 56.125, 37.875, 56.125, 31.875, 55.125, 38.875, 42.125, 38.875, 44.125, 29.875, 44.125, 28.875, 43.125, 29.875, 19.125, 29.875, 19.125, 28.875, 9.125, 28.875, 9.125, 13.875 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D"]
+polygon = PoolVector2Array( -27, -22, 27, -22, 27, 0, 26, 1, 26, 0, 24, 6, 24, 0, 23, 7, 10, 7, 12, -2, 12, -3, 11, -2, -13, -2, -13, -3, -23, -3, -23, -18 )
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="rigids"]
+collision_layer = 16
+collision_mask = 0
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D2"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -27, -22, -27, 22, -23, 18, -23, 7, -8, 7, 0, 1, -13, 0, -13, -3, -19, -2, -23, -3, -23, -18 )
+uv = PoolVector2Array( 5.05589, 9.9815, 5.05589, 53.9815, 9.05589, 49.9815, 9.05589, 38.9815, 24.0559, 38.9815, 32.0559, 32.9815, 19.0559, 31.9815, 19.0559, 28.9815, 13.0559, 29.9815, 9.05589, 28.9815, 9.05589, 13.9815 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D2"]
+polygon = PoolVector2Array( -27, -22, -27, 22, -23, 18, -23, 7, -8, 7, 0, 1, -13, 0, -13, -3, -19, -2, -23, -3, -23, -18 )
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="rigids"]
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D3"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -27, 22, 27, 22, 23, 18, 0, 18, -1, 15, -14, 15, -14, 16, -17, 16, -17, 15, -23, 15, -23, 18 )
+uv = PoolVector2Array( 4.9375, 54.1875, 58.9375, 54.1875, 54.9375, 50.1875, 31.9375, 50.1875, 30.9375, 47.1875, 17.9375, 47.1875, 17.9375, 48.1875, 14.9375, 48.1875, 14.9375, 47.1875, 8.9375, 47.1875, 8.9375, 50.1875 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D3"]
+polygon = PoolVector2Array( -27, 22, 27, 22, 23, 18, 0, 18, -1, 15, -14, 15, -14, 16, -17, 16, -17, 15, -23, 15, -23, 18 )
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="rigids"]
+collision_layer = 16
+collision_mask = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D4"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( 23, 18, 27, 22, 27, 0, 26, 1, 26, 0, 24, 6, 24, 0, 23, 7, 10, 7, 12, -2, 12, -3, 11, -2, 0, 1, -8, 7, -23, 7, -23, 15, -17, 15, -17, 16, -14, 16, -14, 15, -1, 15, 0, 18 )
+uv = PoolVector2Array( 55.1875, 50.0625, 59.1875, 54.0625, 59.1875, 32.0625, 58.1875, 33.0625, 58.1875, 32.0625, 56.1875, 38.0625, 56.1875, 32.0625, 55.1875, 39.0625, 42.1875, 39.0625, 44.1875, 30.0625, 44.1875, 29.0625, 43.1875, 30.0625, 32.1875, 33.0625, 24.1875, 39.0625, 9.1875, 39.0625, 9.1875, 47.0625, 15.1875, 47.0625, 15.1875, 48.0625, 18.1875, 48.0625, 18.1875, 47.0625, 31.1875, 47.0625, 32.1875, 50.0625 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D4"]
+polygon = PoolVector2Array( 23, 18, 27, 22, 27, 0, 26, 1, 26, 0, 24, 6, 24, 0, 23, 7, 10, 7, 12, -2, 12, -3, 11, -2, 0, 1, -8, 7, -23, 7, -23, 15, -17, 15, -17, 16, -14, 16, -14, 15, -1, 15, 0, 18 )
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="rigids"]
+collision_layer = 16
+collision_mask = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D5"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -13, 0, -13, -2, 11, -2, 0, 1 )
+uv = PoolVector2Array( 18.8125, 32, 18.8125, 30, 42.8125, 30, 31.8125, 33 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D5"]
+polygon = PoolVector2Array( -13, 0, -13, -2, 11, -2, 0, 1 )
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="rigids"]
+collision_layer = 16
+collision_mask = 7
+
+[node name="Polygon2D" type="Polygon2D" parent="rigids/RigidBody2D6"]
+texture = ExtResource( 2 )
+polygon = PoolVector2Array( -23, -3, -13, -3, -19, -2 )
+uv = PoolVector2Array( 9.3125, 30.125, 19.3125, 30.125, 13.3125, 31.125 )
+
+[node name="Polygon2D2" type="CollisionPolygon2D" parent="rigids/RigidBody2D6"]
+polygon = PoolVector2Array( -23, -3, -13, -3, -19, -2 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/destroy = SubResource( 2 )

@@ -1,0 +1,186 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scripts/UPGRADES.gd" type="Script" id=1]
+[ext_resource path="res://UI/fontes/Sharp Retro.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 2 )
+
+[node name="UPGRADES" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="GridContainer" type="GridContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -150.0
+margin_bottom = 140.0
+columns = 3
+
+[node name="fuel_" type="Button" parent="GridContainer"]
+margin_right = 20.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="fuel" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 3.0
+margin_right = 126.0
+margin_bottom = 16.0
+custom_fonts/font = SubResource( 1 )
+text = "FUEL"
+align = 1
+
+[node name="fuel_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_right = 150.0
+margin_bottom = 19.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="vel_" type="Button" parent="GridContainer"]
+margin_top = 23.0
+margin_right = 20.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="vel" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 26.0
+margin_right = 126.0
+margin_bottom = 39.0
+custom_fonts/font = SubResource( 1 )
+text = "VEL"
+align = 1
+
+[node name="vel_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_top = 23.0
+margin_right = 150.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="acel_" type="Button" parent="GridContainer"]
+margin_top = 46.0
+margin_right = 20.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="acel" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 49.0
+margin_right = 126.0
+margin_bottom = 62.0
+custom_fonts/font = SubResource( 1 )
+text = "ACEL"
+align = 1
+
+[node name="acel_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_top = 46.0
+margin_right = 150.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="friction_" type="Button" parent="GridContainer"]
+margin_top = 69.0
+margin_right = 20.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="friction" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 72.0
+margin_right = 126.0
+margin_bottom = 85.0
+custom_fonts/font = SubResource( 1 )
+text = "FRICTION "
+align = 1
+
+[node name="friction_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_top = 69.0
+margin_right = 150.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="rotate_car_" type="Button" parent="GridContainer"]
+margin_top = 92.0
+margin_right = 20.0
+margin_bottom = 111.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="rotate_car" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 95.0
+margin_right = 126.0
+margin_bottom = 108.0
+custom_fonts/font = SubResource( 1 )
+text = "VEL ROTATE CAR"
+align = 1
+
+[node name="rotate_car_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_top = 92.0
+margin_right = 150.0
+margin_bottom = 111.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="suspension_" type="Button" parent="GridContainer"]
+margin_top = 115.0
+margin_right = 20.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 2 )
+text = "-"
+
+[node name="suspension" type="Label" parent="GridContainer"]
+margin_left = 24.0
+margin_top = 118.0
+margin_right = 126.0
+margin_bottom = 131.0
+custom_fonts/font = SubResource( 1 )
+text = "SUSPENSION"
+align = 1
+
+[node name="suspension_plus" type="Button" parent="GridContainer"]
+margin_left = 130.0
+margin_top = 115.0
+margin_right = 150.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 3 )
+text = "+"
+
+[node name="Label" type="Label" parent="."]
+anchor_right = 0.168
+anchor_bottom = 0.047
+margin_right = -0.0160065
+margin_bottom = -0.1
+custom_fonts/font = SubResource( 1 )
+text = "FRUITS: 0"
+
+[connection signal="pressed" from="GridContainer/fuel_" to="." method="_on_fuel__pressed"]
+[connection signal="pressed" from="GridContainer/fuel_plus" to="." method="_on_fuel_plus_pressed"]
+[connection signal="pressed" from="GridContainer/vel_" to="." method="_on_vel__pressed"]
+[connection signal="pressed" from="GridContainer/vel_plus" to="." method="_on_vel_plus_pressed"]
+[connection signal="pressed" from="GridContainer/acel_" to="." method="_on_acel__pressed"]
+[connection signal="pressed" from="GridContainer/acel_plus" to="." method="_on_acel_plus_pressed"]
+[connection signal="pressed" from="GridContainer/friction_" to="." method="_on_friction__pressed"]
+[connection signal="pressed" from="GridContainer/friction_plus" to="." method="_on_friction_plus_pressed"]
+[connection signal="pressed" from="GridContainer/rotate_car_" to="." method="_on_rotate_car__pressed"]
+[connection signal="pressed" from="GridContainer/rotate_car_plus" to="." method="_on_rotate_car_plus_pressed"]
+[connection signal="pressed" from="GridContainer/suspension_" to="." method="_on_suspension__pressed"]
+[connection signal="pressed" from="GridContainer/suspension_plus" to="." method="_on_suspension_plus_pressed"]

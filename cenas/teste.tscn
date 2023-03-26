@@ -1,0 +1,1210 @@
+[gd_scene load_steps=97 format=2]
+
+[ext_resource path="res://scripts/teste.gd" type="Script" id=2]
+[ext_resource path="res://addons/rmsmartshape/shapes/point_array.gd" type="Script" id=3]
+[ext_resource path="res://addons/rmsmartshape/materials/shape_material.gd" type="Script" id=4]
+[ext_resource path="res://addons/rmsmartshape/shapes/shape_closed.gd" type="Script" id=5]
+[ext_resource path="res://addons/rmsmartshape/vertex_properties.gd" type="Script" id=6]
+[ext_resource path="res://addons/rmsmartshape/shapes/point.gd" type="Script" id=7]
+[ext_resource path="res://UI/GUI/UPGRADES.tscn" type="PackedScene" id=8]
+[ext_resource path="res://sprites/terra.png" type="Texture" id=9]
+[ext_resource path="res://addons/rmsmartshape/normal_range.gd" type="Script" id=10]
+[ext_resource path="res://addons/rmsmartshape/materials/edge_material_metadata.gd" type="Script" id=11]
+[ext_resource path="res://addons/rmsmartshape/materials/edge_material.gd" type="Script" id=12]
+[ext_resource path="res://sprites/grama.png" type="Texture" id=13]
+[ext_resource path="res://map/tree.tscn" type="PackedScene" id=14]
+[ext_resource path="res://map/parallax/ParallaxBackground.tscn" type="PackedScene" id=15]
+[ext_resource path="res://sprites/New Piskel (8).png" type="Texture" id=16]
+[ext_resource path="res://sprites/New Piskel (6).png" type="Texture" id=17]
+[ext_resource path="res://sprites/New Piskel (5).png" type="Texture" id=18]
+[ext_resource path="res://sprites/New Piskel (10).png" type="Texture" id=19]
+[ext_resource path="res://sprites/New Piskel (4).png" type="Texture" id=20]
+[ext_resource path="res://sprites/New Piskel (7).png" type="Texture" id=21]
+[ext_resource path="res://sprites/New Piskel (9).png" type="Texture" id=22]
+[ext_resource path="res://cenas/itens/itens.tscn" type="PackedScene" id=24]
+[ext_resource path="res://UI/transitions/transition.tscn" type="PackedScene" id=25]
+
+[sub_resource type="Resource" id=113]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=114]
+script = ExtResource( 7 )
+position = Vector2( 432, 440 )
+point_in = Vector2( -80, -64 )
+point_out = Vector2( 80, 72 )
+properties = SubResource( 113 )
+
+[sub_resource type="Resource" id=115]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=116]
+script = ExtResource( 7 )
+position = Vector2( -912, 2024 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 115 )
+
+[sub_resource type="Resource" id=117]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=118]
+script = ExtResource( 7 )
+position = Vector2( 728, 952 )
+point_in = Vector2( -144, -112 )
+point_out = Vector2( 144, 112 )
+properties = SubResource( 117 )
+
+[sub_resource type="Resource" id=119]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=120]
+script = ExtResource( 7 )
+position = Vector2( 1248, 960 )
+point_in = Vector2( -48, 0 )
+point_out = Vector2( 56, 0 )
+properties = SubResource( 119 )
+
+[sub_resource type="Resource" id=121]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=122]
+script = ExtResource( 7 )
+position = Vector2( 1088, 1032 )
+point_in = Vector2( -168, 32 )
+point_out = Vector2( 168, -24 )
+properties = SubResource( 121 )
+
+[sub_resource type="Resource" id=123]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=124]
+script = ExtResource( 7 )
+position = Vector2( 840, 1024 )
+point_in = Vector2( -120, -32 )
+point_out = Vector2( 128, 40 )
+properties = SubResource( 123 )
+
+[sub_resource type="Resource" id=125]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=126]
+script = ExtResource( 7 )
+position = Vector2( -239.024, 424.057 )
+point_in = Vector2( -72, -112 )
+point_out = Vector2( 72, 120 )
+properties = SubResource( 125 )
+
+[sub_resource type="Resource" id=127]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=128]
+script = ExtResource( 7 )
+position = Vector2( -360, -736 )
+point_in = Vector2( -504, 24 )
+point_out = Vector2( 512, -16 )
+properties = SubResource( 127 )
+
+[sub_resource type="Resource" id=129]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=130]
+script = ExtResource( 7 )
+position = Vector2( -360, -736 )
+point_in = Vector2( -504, 24 )
+point_out = Vector2( 512, -16 )
+properties = SubResource( 129 )
+
+[sub_resource type="Resource" id=131]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=132]
+script = ExtResource( 7 )
+position = Vector2( 1456, 1048 )
+point_in = Vector2( -80, 0 )
+point_out = Vector2( 80, 8 )
+properties = SubResource( 131 )
+
+[sub_resource type="Resource" id=133]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=134]
+script = ExtResource( 7 )
+position = Vector2( 1680, 944 )
+point_in = Vector2( -48, 0 )
+point_out = Vector2( 48, 0 )
+properties = SubResource( 133 )
+
+[sub_resource type="Resource" id=135]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=136]
+script = ExtResource( 7 )
+position = Vector2( 1880, 1056 )
+point_in = Vector2( -64, 0 )
+point_out = Vector2( 72, 0 )
+properties = SubResource( 135 )
+
+[sub_resource type="Resource" id=137]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=138]
+script = ExtResource( 7 )
+position = Vector2( 2128, 952 )
+point_in = Vector2( -80, 0 )
+point_out = Vector2( 88, 0 )
+properties = SubResource( 137 )
+
+[sub_resource type="Resource" id=139]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=140]
+script = ExtResource( 7 )
+position = Vector2( 2368.02, 1122.32 )
+point_in = Vector2( -136, 8 )
+point_out = Vector2( 144, 0 )
+properties = SubResource( 139 )
+
+[sub_resource type="Resource" id=141]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=142]
+script = ExtResource( 7 )
+position = Vector2( 3150.47, 1395.7 )
+point_in = Vector2( -187.972, 27.2754 )
+point_out = Vector2( 195.972, -19.2754 )
+properties = SubResource( 141 )
+
+[sub_resource type="Resource" id=143]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=144]
+script = ExtResource( 7 )
+position = Vector2( 4212.37, 355.345 )
+point_in = Vector2( -312, 40 )
+point_out = Vector2( 320, -32 )
+properties = SubResource( 143 )
+
+[sub_resource type="Resource" id=145]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=146]
+script = ExtResource( 7 )
+position = Vector2( 4411.77, 754.48 )
+point_in = Vector2( -140.909, -56.1516 )
+point_out = Vector2( 140.909, 56.1516 )
+properties = SubResource( 145 )
+
+[sub_resource type="Resource" id=147]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=148]
+script = ExtResource( 7 )
+position = Vector2( 4598.65, 620.996 )
+point_in = Vector2( -37.0811, -5.2973 )
+point_out = Vector2( 37.0811, 5.2973 )
+properties = SubResource( 147 )
+
+[sub_resource type="Resource" id=149]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=150]
+script = ExtResource( 7 )
+position = Vector2( 4785.53, 823.892 )
+point_in = Vector2( -112.007, -15.934 )
+point_out = Vector2( 112.007, 15.934 )
+properties = SubResource( 149 )
+
+[sub_resource type="Resource" id=151]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=152]
+script = ExtResource( 7 )
+position = Vector2( 7529.96, -959.458 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 151 )
+
+[sub_resource type="Resource" id=153]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=154]
+script = ExtResource( 7 )
+position = Vector2( 6237.07, 681.283 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 153 )
+
+[sub_resource type="Resource" id=155]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=156]
+script = ExtResource( 7 )
+position = Vector2( 7406.4, 131.328 )
+point_in = Vector2( -100.908, -21.8633 )
+point_out = Vector2( 100.908, 21.8633 )
+properties = SubResource( 155 )
+
+[sub_resource type="Resource" id=157]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=158]
+script = ExtResource( 7 )
+position = Vector2( 10204.1, 2082.24 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 157 )
+
+[sub_resource type="Resource" id=159]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=160]
+script = ExtResource( 7 )
+position = Vector2( 7555.72, 261.517 )
+point_in = Vector2( -70.6353, -11.7725 )
+point_out = Vector2( 70.6353, 11.7725 )
+properties = SubResource( 159 )
+
+[sub_resource type="Resource" id=161]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=162]
+script = ExtResource( 7 )
+position = Vector2( 7747.94, 165.409 )
+point_in = Vector2( -68.9536, -18.4997 )
+point_out = Vector2( 68.9536, 18.4997 )
+properties = SubResource( 161 )
+
+[sub_resource type="Resource" id=163]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=164]
+script = ExtResource( 7 )
+position = Vector2( 7897.44, 336.269 )
+point_in = Vector2( -60.5444, -23.5451 )
+point_out = Vector2( 60.5444, 23.5451 )
+properties = SubResource( 163 )
+
+[sub_resource type="Resource" id=165]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=166]
+script = ExtResource( 7 )
+position = Vector2( 8105.68, 170.748 )
+point_in = Vector2( -75.6807, -6.72717 )
+point_out = Vector2( 75.6807, 6.72717 )
+properties = SubResource( 165 )
+
+[sub_resource type="Resource" id=167]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=168]
+script = ExtResource( 7 )
+position = Vector2( 8303.24, 368.305 )
+point_in = Vector2( -57.1807, -11.7725 )
+point_out = Vector2( 57.1807, 11.7725 )
+properties = SubResource( 167 )
+
+[sub_resource type="Resource" id=169]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=170]
+script = ExtResource( 7 )
+position = Vector2( 8727.33, 184.49 )
+point_in = Vector2( -77.3623, -10.0908 )
+point_out = Vector2( 77.3623, 10.0908 )
+properties = SubResource( 169 )
+
+[sub_resource type="Resource" id=171]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=172]
+script = ExtResource( 7 )
+position = Vector2( 9226.95, 661.97 )
+point_in = Vector2( -701.308, -314.495 )
+point_out = Vector2( 701.308, 314.495 )
+properties = SubResource( 171 )
+
+[sub_resource type="Resource" id=173]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=174]
+script = ExtResource( 7 )
+position = Vector2( 9969.12, -245.723 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 173 )
+
+[sub_resource type="Resource" id=175]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=176]
+script = ExtResource( 7 )
+position = Vector2( 9574.01, -747.624 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 175 )
+
+[sub_resource type="Resource" id=177]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=178]
+script = ExtResource( 7 )
+position = Vector2( 9552.65, -373.868 )
+point_in = Vector2( 233.769, 327.95 )
+point_out = Vector2( -233.769, -327.95 )
+properties = SubResource( 177 )
+
+[sub_resource type="Resource" id=179]
+script = ExtResource( 6 )
+texture_idx = 0
+flip = false
+width = 1.0
+
+[sub_resource type="Resource" id=180]
+script = ExtResource( 7 )
+position = Vector2( 8746.4, -469.976 )
+point_in = Vector2( 0, 0 )
+point_out = Vector2( 0, 0 )
+properties = SubResource( 179 )
+
+[sub_resource type="Resource" id=181]
+script = ExtResource( 3 )
+_points = {
+1: SubResource( 114 ),
+2: SubResource( 116 ),
+6: SubResource( 118 ),
+7: SubResource( 120 ),
+8: SubResource( 122 ),
+9: SubResource( 124 ),
+10: SubResource( 126 ),
+11: SubResource( 128 ),
+12: SubResource( 130 ),
+13: SubResource( 132 ),
+14: SubResource( 134 ),
+15: SubResource( 136 ),
+16: SubResource( 138 ),
+17: SubResource( 140 ),
+18: SubResource( 142 ),
+23: SubResource( 144 ),
+39: SubResource( 146 ),
+40: SubResource( 148 ),
+41: SubResource( 150 ),
+43: SubResource( 152 ),
+45: SubResource( 154 ),
+46: SubResource( 156 ),
+47: SubResource( 158 ),
+48: SubResource( 160 ),
+49: SubResource( 162 ),
+50: SubResource( 164 ),
+51: SubResource( 166 ),
+52: SubResource( 168 ),
+53: SubResource( 170 ),
+54: SubResource( 172 ),
+55: SubResource( 174 ),
+57: SubResource( 176 ),
+58: SubResource( 178 ),
+59: SubResource( 180 )
+}
+_point_order = [ 11, 10, 1, 6, 9, 8, 7, 13, 14, 15, 16, 17, 18, 23, 39, 40, 41, 43, 45, 46, 48, 49, 50, 51, 52, 53, 54, 58, 59, 57, 55, 47, 2, 12 ]
+_constraints = {
+[ 11, 12 ]: 15
+}
+_next_key = 60
+
+[sub_resource type="Resource" id=110]
+script = ExtResource( 12 )
+textures = [ ExtResource( 13 ) ]
+texture_normals = [  ]
+textures_corner_outer = [  ]
+textures_corner_inner = [  ]
+texture_normals_corner_outer = [  ]
+texture_normals_corner_inner = [  ]
+textures_taper_left = [  ]
+textures_taper_right = [  ]
+texture_normals_taper_left = [  ]
+texture_normals_taper_right = [  ]
+use_corner_texture = true
+use_taper_texture = true
+fit_mode = 0
+
+[sub_resource type="Resource" id=111]
+script = ExtResource( 10 )
+begin = 0.0
+distance = 0.0
+edgeRendering = Vector2( 0, 0 )
+
+[sub_resource type="Resource" id=112]
+script = ExtResource( 11 )
+edge_material = SubResource( 110 )
+normal_range = SubResource( 111 )
+weld = true
+render = true
+z_index = 0
+z_as_relative = true
+offset = 0.0
+
+[sub_resource type="Resource" id=34]
+script = ExtResource( 4 )
+_edge_meta_materials = [ SubResource( 112 ) ]
+fill_textures = [ ExtResource( 9 ) ]
+fill_texture_normals = [  ]
+fill_texture_z_index = -10
+fill_mesh_offset = 0.0
+render_offset = 0.0
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="position_spaw" type="Position2D" parent="."]
+position = Vector2( 46, 279 )
+
+[node name="transition" parent="." instance=ExtResource( 25 )]
+type = null
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 15 )]
+
+[node name="UPGRADES" parent="." instance=ExtResource( 8 )]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="SS2D_Shape_Closed3" type="Node2D" parent="StaticBody2D"]
+script = ExtResource( 5 )
+_points = SubResource( 181 )
+material_overrides = {
+}
+shape_material = SubResource( 34 )
+tessellation_stages = 5
+tessellation_tolerence = 4.0
+flip_edges = false
+render_edges = true
+collision_size = 32.0
+collision_offset = 0.0
+collision_polygon_node_path = NodePath("../CollisionPolygon2D")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+modulate = Color( 1, 1, 1, 0.3 )
+polygon = PoolVector2Array( -360.002, -736.035, -336.708, -735.977, -314.809, -734.409, -294.269, -731.353, -275.053, -726.854, -257.127, -720.958, -240.456, -713.713, -225.007, -705.163, -210.744, -695.356, -197.633, -684.339, -185.64, -672.157, -174.731, -658.859, -164.87, -644.49, -156.023, -629.097, -148.145, -612.731, -135.199, -577.248, -125.767, -538.41, -119.547, -496.594, -115.67, -405.512, -134.488, -203.968, -216.301, 193.298, -243.877, 341.401, -246.398, 369.129, -246.605, 392.396, -245.762, 402.238, -244.223, 410.823, -241.961, 418.096, -238.994, 424.039, -235.304, 429.457, -230.975, 434.463, -226.031, 439.072, -220.493, 443.295, -214.38, 447.144, -207.708, 450.621, -192.792, 456.547, -175.91, 461.178, -157.215, 464.586, -115.051, 468.146, -16.1618, 464.949, 93.488, 453.028, 303.527, 427.375, 346.537, 425.035, 383.153, 425.844, 398.657, 427.672, 412.076, 430.574, 417.952, 432.464, 423.249, 434.646, 427.946, 437.144, 432.04, 439.952, 439.49, 447.475, 446.941, 456.374, 461.803, 478.065, 491.76, 534.62, 556.004, 680.998, 632.269, 834.864, 654.074, 869.325, 677.231, 900.787, 701.843, 928.565, 784.271, 989.345, 795.151, 1014.85, 806.644, 1016.3, 840.004, 1023.98, 909.126, 1046.62, 930.426, 1052.53, 939.766, 1054.19, 949.001, 1054.98, 958.705, 1054.94, 969.452, 1054.07, 996.375, 1049.87, 1088, 1032, 1141.14, 1022, 1161.03, 1016.43, 1177.12, 1010.61, 1189.87, 1004.65, 1199.78, 998.648, 1207.32, 992.724, 1212.98, 986.982, 1217.24, 981.524, 1236.78, 961.508, 1243.79, 960.126, 1248, 959.987, 1253.3, 960.237, 1258.69, 960.964, 1269.74, 963.756, 1281.14, 968.108, 1292.88, 973.734, 1369.8, 1020.15, 1397.63, 1034.23, 1411.9, 1039.87, 1426.4, 1044.2, 1441.1, 1046.98, 1456, 1048, 1463.55, 1048.39, 1471.17, 1048.14, 1478.87, 1047.27, 1486.62, 1045.81, 1502.26, 1041.35, 1517.99, 1035.1, 1549.37, 1018.6, 1580, 998.999, 1635.99, 961.367, 1648.35, 954.273, 1659.87, 948.784, 1665.28, 946.751, 1670.45, 945.238, 1675.36, 944.293, 1680, 943.962, 1684.62, 944.292, 1689.46, 945.239, 1694.51, 946.756, 1699.76, 948.797, 1710.8, 954.323, 1722.51, 961.49, 1828.52, 1038.47, 1841.9, 1045.65, 1855.01, 1051.17, 1861.42, 1053.22, 1867.74, 1054.73, 1873.93, 1055.66, 1880, 1055.98, 1886.82, 1055.69, 1893.77, 1054.81, 1908.04, 1051.51, 1922.76, 1046.39, 1937.87, 1039.73, 2065.61, 968.226, 2081.57, 961.586, 2097.32, 956.448, 2112.82, 953.15, 2120.45, 952.287, 2128, 951.979, 2136.05, 952.478, 2143.71, 953.97, 2151.02, 956.376, 2158.01, 959.627, 2164.72, 963.655, 2171.19, 968.385, 2183.55, 979.698, 2230.01, 1040.16, 2255.53, 1071.93, 2269.83, 1086.34, 2285.53, 1099.07, 2293.99, 1104.63, 2302.91, 1109.56, 2312.33, 1113.8, 2322.27, 1117.28, 2332.78, 1119.94, 2343.88, 1121.71, 2355.62, 1122.52, 2368.02, 1122.31, 2382.4, 1123.16, 2398.48, 1125.67, 2435.28, 1135.16, 2524.6, 1168.86, 2742.76, 1269.24, 2969.17, 1364.47, 3020.8, 1380.59, 3068.79, 1391.76, 3112.29, 1397.1, 3132.09, 1397.3, 3150.47, 1395.69, 3159.91, 1394.07, 3169.87, 1391.11, 3180.32, 1386.83, 3191.25, 1381.26, 3214.52, 1366.47, 3239.56, 1347.09, 3294.5, 1295.95, 3355.19, 1230.63, 3942.36, 532.043, 4015.3, 464.543, 4085.19, 410.725, 4118.73, 389.827, 4151.17, 373.385, 4182.42, 361.773, 4197.57, 357.889, 4212.37, 355.322, 4240.7, 353.502, 4265.8, 353.918, 4287.85, 356.451, 4307.04, 360.985, 4315.61, 363.961, 4323.54, 367.374, 4330.84, 371.216, 4337.53, 375.473, 4343.65, 380.127, 4349.2, 385.161, 4354.22, 390.56, 4358.72, 396.306, 4362.73, 402.382, 4366.29, 408.767, 4372.06, 422.418, 4376.22, 437.131, 4378.96, 452.763, 4380.87, 486.262, 4379.23, 521.856, 4366.2, 663.927, 4366.78, 679.457, 4368.49, 694.049, 4371.46, 707.571, 4373.47, 713.891, 4375.88, 719.89, 4378.7, 725.555, 4381.95, 730.869, 4385.66, 735.815, 4389.84, 740.378, 4394.52, 744.54, 4399.72, 748.287, 4405.46, 751.6, 4411.77, 754.466, 4424.6, 759.008, 4436.69, 762.159, 4448.05, 764.003, 4458.74, 764.625, 4468.76, 764.107, 4478.16, 762.532, 4486.96, 759.985, 4495.19, 756.546, 4502.89, 752.298, 4510.07, 747.322, 4516.78, 741.701, 4523.03, 735.509, 4534.3, 721.781, 4544.12, 706.794, 4573.62, 647.513, 4607.45, 625.391, 4612.75, 630.563, 4620.08, 640.313, 4627.75, 652.69, 4664, 718.45, 4686.97, 754.08, 4700.03, 770.83, 4714.31, 786.195, 4729.88, 799.69, 4738.19, 805.58, 4746.87, 810.805, 4755.93, 815.309, 4765.39, 819.03, 4775.25, 821.906, 4785.54, 823.747, 4792.59, 823.239, 4803.25, 820.15, 4834.8, 806.476, 4935.61, 751.826, 7539.86, -968.559, 6246.8, 673.244, 6783.89, 398.105, 7181.12, 208.028, 7327.18, 148.664, 7376.63, 133.871, 7394.16, 130.949, 7400.97, 130.691, 7406.41, 131.274, 7423.94, 136.231, 7438.9, 142.697, 7445.51, 146.43, 7451.61, 150.436, 7462.39, 159.215, 7471.54, 168.826, 7479.38, 179.012, 7492.42, 200.205, 7504.04, 220.913, 7510.13, 230.501, 7516.79, 239.273, 7520.44, 243.282, 7524.37, 246.994, 7528.6, 250.384, 7533.17, 253.424, 7538.13, 256.085, 7543.52, 258.338, 7549.37, 260.154, 7555.72, 261.497, 7562.29, 262.198, 7568.76, 262.15, 7575.14, 261.398, 7581.43, 259.992, 7587.64, 257.984, 7593.77, 255.415, 7605.85, 248.847, 7617.71, 240.709, 7629.4, 231.4, 7675.44, 190.785, 7687.02, 181.863, 7698.74, 174.253, 7710.64, 168.393, 7716.68, 166.253, 7722.78, 164.689, 7728.95, 163.768, 7735.2, 163.541, 7741.53, 164.062, 7747.95, 165.385, 7754.27, 167.441, 7760.32, 170.102, 7766.12, 173.331, 7771.69, 177.076, 7782.17, 186.008, 7791.9, 196.58, 7809.59, 221.385, 7858.26, 302.221, 7867.09, 313.329, 7876.48, 322.911, 7881.42, 327.039, 7886.55, 330.659, 7891.89, 333.742, 7897.45, 336.249, 7900.29, 337.193, 7903.15, 337.826, 7906.03, 338.157, 7908.92, 338.198, 7911.83, 337.956, 7914.76, 337.441, 7917.7, 336.664, 7920.66, 335.622, 7926.62, 332.828, 7932.65, 329.148, 7938.73, 324.642, 7944.86, 319.375, 7969.97, 292.462, 8022.49, 226.364, 8049.71, 197.061, 8063.54, 185.527, 8070.5, 180.806, 8077.48, 176.876, 8084.49, 173.821, 8091.53, 171.736, 8095.06, 171.083, 8098.59, 170.686, 8102.13, 170.566, 8105.68, 170.724, 8112.75, 171.84, 8119.75, 173.921, 8126.69, 176.886, 8133.56, 180.673, 8140.37, 185.219, 8147.13, 190.457, 8160.46, 202.78, 8186.38, 233.1, 8211.4, 267.634, 8258.91, 333.404, 8270.27, 346.265, 8281.45, 356.695, 8286.97, 360.848, 8292.44, 364.195, 8297.87, 366.701, 8300.56, 367.62, 8303.25, 368.282, 8306.09, 368.675, 8309.27, 368.769, 8312.77, 368.562, 8316.58, 368.057, 8325.08, 366.228, 8334.7, 363.35, 8382.74, 343.119, 8636.46, 210.588, 8689.23, 189.951, 8700.34, 186.974, 8741.98, 200.783, 8739.41, 219.128, 8736.25, 236.363, 8734.52, 257.079, 8734.79, 268.752, 8736.17, 281.306, 8738.88, 294.745, 8743.18, 309.073, 8749.3, 324.293, 8757.49, 340.409, 8768.01, 357.424, 8781.09, 375.334, 8815.91, 413.882, 8863.91, 456.092, 8927.06, 501.977, 9007.31, 551.559, 9226.96, 661.958, 9290.25, 687.586, 9348.75, 705.749, 9402.58, 716.82, 9451.89, 721.188, 9474.88, 720.975, 9496.8, 719.211, 9517.65, 715.955, 9537.46, 711.252, 9556.24, 705.149, 9574, 697.692, 9590.78, 688.928, 9606.57, 678.905, 9621.41, 667.666, 9635.3, 655.26, 9648.27, 641.733, 9660.32, 627.124, 9681.77, 594.875, 9699.81, 558.893, 9714.56, 519.538, 9726.15, 477.181, 9740.42, 384.965, 9743.76, 285.221, 9737.23, 180.921, 9721.94, 75.0436, 9698.99, -29.436, 9669.49, -129.542, 9634.52, -222.297, 9595.2, -304.725, 9552.63, -373.853, 9529.76, -402.986, 9505.06, -428.979, 9478.71, -451.983, 9450.88, -472.142, 9421.73, -489.602, 9391.43, -504.507, 9360.15, -517.001, 9328.05, -527.221, 9262.06, -541.454, 9194.82, -548.379, 9127.64, -549.139, 9061.86, -544.888, 8939.87, -526.022, 8839.51, -501.065, 8731.24, -464.905, 9574.84, -750.423, 9969.71, -245.961, 10208, 2085.81, -915.669, 2027.43, -825.01, 652.999, -756.154, 147.826, -658.9, -294.632, -598.113, -472.388, -564.423, -546.907, -528.435, -610.524, -509.552, -637.93, -490.074, -662.241, -469.984, -683.33, -449.273, -701.071, -427.93, -715.342, -405.944, -726.015, -383.304, -732.963 )
+
+[node name="itens" type="Node2D" parent="."]
+
+[node name="itens2" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1007, 1013 )
+
+[node name="itens3" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1058, 996 )
+
+[node name="itens4" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1115, 978 )
+
+[node name="itens5" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1242, 919 )
+box = true
+fruit = false
+
+[node name="itens6" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1354, 964 )
+
+[node name="itens7" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1396, 994 )
+
+[node name="itens8" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1442, 1016 )
+
+[node name="itens9" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1493, 1004 )
+
+[node name="itens10" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1539, 979 )
+
+[node name="itens11" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1587, 951 )
+
+[node name="itens12" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1684, 905 )
+box = true
+fruit = false
+
+[node name="itens13" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1768, 953 )
+
+[node name="itens14" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1810, 989 )
+
+[node name="itens15" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1876, 1024 )
+box = true
+fruit = false
+
+[node name="itens16" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1937, 1000 )
+
+[node name="itens17" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 1982, 980 )
+
+[node name="itens18" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 3488, 1020 )
+
+[node name="itens19" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 3528, 979 )
+
+[node name="itens20" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 3562, 937 )
+
+[node name="itens21" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4032, 399 )
+box = true
+fruit = false
+
+[node name="itens22" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4157, 334 )
+
+[node name="itens23" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4208, 320 )
+
+[node name="itens24" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4264, 314 )
+
+[node name="itens25" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4314, 321 )
+
+[node name="itens26" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 4369, 345 )
+
+[node name="itens27" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 5375, 411 )
+
+[node name="itens28" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 5419, 385 )
+
+[node name="itens29" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 5462, 353 )
+
+[node name="itens30" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 5510, 323 )
+
+[node name="itens31" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 5965, 25 )
+
+[node name="itens32" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 6009, -5 )
+
+[node name="itens33" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 6055, -29 )
+
+[node name="itens34" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 6102, -57 )
+
+[node name="itens35" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 6145, -88 )
+
+[node name="itens36" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 6189, -121 )
+
+[node name="itens37" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9295, -697 )
+
+[node name="itens38" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9647, -707 )
+box = true
+fruit = false
+
+[node name="itens39" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9687, -662 )
+box = true
+fruit = false
+
+[node name="itens40" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9714, -622 )
+box = true
+fruit = false
+
+[node name="itens41" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9751, -573 )
+box = true
+fruit = false
+
+[node name="itens42" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9354, 671 )
+
+[node name="itens43" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9395, 683 )
+
+[node name="itens44" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9441, 692 )
+
+[node name="itens45" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9490, 691 )
+
+[node name="itens46" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9549, 671 )
+
+[node name="itens47" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9598, 643 )
+
+[node name="itens48" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9640, 609 )
+
+[node name="itens49" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9666, 556 )
+
+[node name="itens50" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9687, 501 )
+
+[node name="itens51" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9709, 443 )
+
+[node name="itens52" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9715, 388 )
+
+[node name="itens53" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9718, 330 )
+
+[node name="itens54" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9720, 274 )
+
+[node name="itens55" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9715, 216 )
+
+[node name="itens56" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9713, 156 )
+
+[node name="itens57" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9696, 103 )
+
+[node name="itens58" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9683, 48 )
+
+[node name="itens59" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9674, -4 )
+
+[node name="itens60" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9662, -59 )
+
+[node name="itens61" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9643, -109 )
+
+[node name="itens62" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9623, -161 )
+
+[node name="itens63" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9598, -215 )
+
+[node name="itens64" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9577, -263 )
+
+[node name="itens65" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9553, -309 )
+
+[node name="itens66" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9529, -354 )
+
+[node name="itens67" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9497, -390 )
+
+[node name="itens68" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9465, -428 )
+
+[node name="itens69" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9422, -454 )
+
+[node name="itens70" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9374, -481 )
+
+[node name="itens71" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9324, -497 )
+
+[node name="itens72" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9272, -507 )
+
+[node name="itens73" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9220, -519 )
+
+[node name="itens74" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9158, -520 )
+
+[node name="itens75" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9102, -518 )
+
+[node name="itens76" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 9039, -510 )
+
+[node name="itens77" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8988, -502 )
+
+[node name="itens78" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8932, -495 )
+
+[node name="itens79" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8880, -477 )
+
+[node name="itens80" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8830, -464 )
+
+[node name="itens81" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8789, -447 )
+
+[node name="itens82" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 8743, -426 )
+
+[node name="itens83" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 2500, 1116 )
+box = true
+fruit = false
+
+[node name="itens84" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 2660, 1187 )
+box = true
+fruit = false
+
+[node name="itens85" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 2794, 1250 )
+box = true
+fruit = false
+
+[node name="itens86" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 2924, 1311 )
+box = true
+fruit = false
+
+[node name="itens87" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( 856, 991 )
+box = true
+fruit = false
+
+[node name="itens89" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( -90, 433 )
+
+[node name="itens90" parent="itens" instance=ExtResource( 24 )]
+position = Vector2( -65, 100 )
+box = true
+fruit = false
+
+[node name="trees" type="Node2D" parent="."]
+
+[node name="tree" parent="trees" instance=ExtResource( 14 )]
+position = Vector2( 41, 331 )
+z_index = -10
+
+[node name="tree" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 921, 596 )
+
+[node name="tree2" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 1902, 593 )
+
+[node name="tree6" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 4594, 170 )
+
+[node name="tree9" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 7307, -307 )
+
+[node name="tree12" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 8808, -35 )
+
+[node name="tree3" parent="trees/tree" instance=ExtResource( 14 )]
+position = Vector2( 8507, -175 )
+
+[node name="tree2" parent="trees" instance=ExtResource( 14 )]
+position = Vector2( 2164, 825 )
+
+[node name="tree3" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 218, 166 )
+
+[node name="tree4" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 1003, 445 )
+
+[node name="tree5" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 2208, -557 )
+
+[node name="tree7" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 2961, -294 )
+
+[node name="tree" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 3509, -651 )
+
+[node name="tree2" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 5080, -1684 )
+
+[node name="tree6" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 4252, -324 )
+
+[node name="tree8" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 4666, -535 )
+
+[node name="tree9" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 6823, -1484 )
+
+[node name="tree10" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 7430, -1692 )
+
+[node name="tree11" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 7652, -1422 )
+
+[node name="tree12" parent="trees/tree2" instance=ExtResource( 14 )]
+position = Vector2( 6027, -740 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees"]
+position = Vector2( 6273, 639 )
+z_index = 1
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)2" type="Sprite" parent="trees"]
+position = Vector2( 4785, 788 )
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees/NewPiskel(5)2"]
+position = Vector2( -31, 15 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)2" type="Sprite" parent="trees/NewPiskel(5)2"]
+position = Vector2( 21, 16 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees"]
+position = Vector2( 4413, 728 )
+rotation = 0.261799
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees/NewPiskel(4)"]
+position = Vector2( 50.0571, 5.22223 )
+rotation = -0.261799
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees/NewPiskel(4)/NewPiskel(4)"]
+position = Vector2( -27, -21 )
+rotation = 0.253082
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)3" type="Sprite" parent="trees"]
+position = Vector2( 3892, 538 )
+rotation = -0.785397
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees/NewPiskel(5)3"]
+position = Vector2( -33.9412, 14.1421 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(7)" type="Sprite" parent="trees"]
+position = Vector2( 2692, 1173 )
+z_index = 1
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(8)" type="Sprite" parent="trees"]
+position = Vector2( 2772, 1139 )
+rotation = 0.261799
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(9)" type="Sprite" parent="trees"]
+position = Vector2( 2803, 1193 )
+texture = ExtResource( 22 )
+
+[node name="NewPiskel(9)2" type="Sprite" parent="trees"]
+position = Vector2( 2850, 1213 )
+texture = ExtResource( 22 )
+
+[node name="NewPiskel(7)2" type="Sprite" parent="trees"]
+position = Vector2( 2760, 1213 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)3" type="Sprite" parent="trees"]
+position = Vector2( 2630, 1147 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)4" type="Sprite" parent="trees"]
+position = Vector2( 2913, 1277 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)5" type="Sprite" parent="trees"]
+position = Vector2( 3519, 970 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)6" type="Sprite" parent="trees"]
+position = Vector2( 3555, 931 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)7" type="Sprite" parent="trees"]
+position = Vector2( 3734, 717 )
+z_index = -1
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(9)3" type="Sprite" parent="trees"]
+position = Vector2( 3771, 648 )
+z_index = -1
+texture = ExtResource( 22 )
+
+[node name="NewPiskel(8)" type="Sprite" parent="trees/NewPiskel(9)3"]
+position = Vector2( -118, 114 )
+z_index = -1
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(8)" type="Sprite" parent="trees/NewPiskel(9)3/NewPiskel(8)"]
+position = Vector2( -53, 61 )
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(10)" type="Sprite" parent="trees/NewPiskel(9)3/NewPiskel(8)/NewPiskel(8)"]
+position = Vector2( 575, -490 )
+texture = ExtResource( 19 )
+
+[node name="NewPiskel(10)2" type="Sprite" parent="trees/NewPiskel(9)3/NewPiskel(8)/NewPiskel(8)"]
+position = Vector2( 724, -493 )
+texture = ExtResource( 19 )
+
+[node name="NewPiskel(10)3" type="Sprite" parent="trees/NewPiskel(9)3/NewPiskel(8)/NewPiskel(8)"]
+position = Vector2( 766, -461 )
+rotation = 0.523598
+texture = ExtResource( 19 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees/NewPiskel(9)3/NewPiskel(8)/NewPiskel(8)/NewPiskel(10)3"]
+position = Vector2( -126.449, 42.983 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(6)" type="Sprite" parent="trees"]
+position = Vector2( 6301, 622 )
+rotation = -0.261799
+texture = ExtResource( 17 )
+
+[node name="NewPiskel(6)" type="Sprite" parent="trees/NewPiskel(6)"]
+position = Vector2( 35.189, -15.4177 )
+rotation = 0.523598
+z_index = -1
+texture = ExtResource( 17 )
+
+[node name="NewPiskel(6)" type="Sprite" parent="trees/NewPiskel(6)/NewPiskel(6)"]
+position = Vector2( 47.6592, -7.59375 )
+texture = ExtResource( 17 )
+
+[node name="NewPiskel(6)2" type="Sprite" parent="trees"]
+position = Vector2( 9173, -632 )
+rotation = -0.261799
+z_index = -1
+texture = ExtResource( 17 )
+
+[node name="NewPiskel(6)3" type="Sprite" parent="trees"]
+position = Vector2( 8994, -562 )
+texture = ExtResource( 17 )
+
+[node name="NewPiskel(4)2" type="Sprite" parent="trees"]
+position = Vector2( 8970, -547 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)3" type="Sprite" parent="trees"]
+position = Vector2( 8995, -540 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)4" type="Sprite" parent="trees"]
+position = Vector2( 9165, -608 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)5" type="Sprite" parent="trees"]
+position = Vector2( 9188, -611 )
+rotation = -0.523598
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees/NewPiskel(4)5"]
+position = Vector2( 13.6104, -16.0233 )
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)4" type="Sprite" parent="trees"]
+position = Vector2( 6315, 635 )
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)5" type="Sprite" parent="trees"]
+position = Vector2( 6351, 619 )
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(4)6" type="Sprite" parent="trees"]
+position = Vector2( 6349, 651 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)7" type="Sprite" parent="trees"]
+position = Vector2( 6316, 671 )
+rotation = 2.87979
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)8" type="Sprite" parent="trees"]
+position = Vector2( 6340, 665 )
+rotation = 3.14159
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)9" type="Sprite" parent="trees"]
+position = Vector2( 6367, 654 )
+rotation = 2.61799
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(8)2" type="Sprite" parent="trees"]
+position = Vector2( 7099, 123 )
+z_index = -1
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(9)" type="Sprite" parent="trees/NewPiskel(8)2"]
+position = Vector2( 56, 12 )
+texture = ExtResource( 22 )
+
+[node name="NewPiskel(9)2" type="Sprite" parent="trees/NewPiskel(8)2"]
+position = Vector2( -63, 68 )
+texture = ExtResource( 22 )
+
+[node name="NewPiskel(7)" type="Sprite" parent="trees/NewPiskel(8)2"]
+position = Vector2( -195, 159 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)2" type="Sprite" parent="trees/NewPiskel(8)2"]
+position = Vector2( 248, -37 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(4)10" type="Sprite" parent="trees"]
+position = Vector2( 9116, 582 )
+rotation = 0.523598
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees/NewPiskel(4)10"]
+position = Vector2( 31.811, -14.9021 )
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(4)" type="Sprite" parent="trees/NewPiskel(4)10/NewPiskel(5)"]
+position = Vector2( 34.7842, 12.2488 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees/NewPiskel(4)10/NewPiskel(5)"]
+position = Vector2( 328.763, -68.5669 )
+rotation = -0.523598
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)" type="Sprite" parent="trees/NewPiskel(4)10/NewPiskel(5)/NewPiskel(5)"]
+position = Vector2( 46, -7.00024 )
+rotation = -0.261799
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(5)2" type="Sprite" parent="trees/NewPiskel(4)10/NewPiskel(5)/NewPiskel(5)"]
+position = Vector2( -51, -2.00024 )
+rotation = 0.261799
+texture = ExtResource( 18 )
+
+[node name="NewPiskel(4)11" type="Sprite" parent="trees"]
+position = Vector2( 9446, 708 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)12" type="Sprite" parent="trees"]
+position = Vector2( 9555, 692 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(4)13" type="Sprite" parent="trees"]
+position = Vector2( 9384, 699 )
+texture = ExtResource( 20 )
+
+[node name="NewPiskel(8)3" type="Sprite" parent="trees"]
+position = Vector2( 9491, 587 )
+z_index = -1
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(8)" type="Sprite" parent="trees/NewPiskel(8)3"]
+position = Vector2( -105, -6 )
+texture = ExtResource( 16 )
+
+[node name="NewPiskel(7)" type="Sprite" parent="trees/NewPiskel(8)3"]
+position = Vector2( -72, 65 )
+texture = ExtResource( 21 )
+
+[node name="NewPiskel(7)" type="Sprite" parent="trees/NewPiskel(8)3/NewPiskel(7)"]
+position = Vector2( 151, -20 )
+texture = ExtResource( 21 )
